@@ -22,6 +22,12 @@ fetch(apiUrl).then(function (response) {
       document.getElementById("artist2-email").innerHTML = data[1].email;
       document.getElementById("artist2-picture").innerHTML =
         "<img src=" + data[1].avatar + "/>";
+
+      document.getElementById("artist3-name").innerHTML =
+        data[1].first_name + " " + data[2].last_name;
+      document.getElementById("artist3-email").innerHTML = data[2].email;
+      document.getElementById("artist3-picture").innerHTML =
+        "<img src=" + data[2].avatar + "/>";
     });
   } else {
     // if not successful, redirect to homepage
@@ -34,13 +40,11 @@ var formHandler = function () {
   var formNameInput = document.querySelector("input[name='name']").value;
   var formEmailInput = document.querySelector("input[name='email']").value;
   var formPhoneInput = document.querySelector("input[name='phone']").value;
-  var formConfirmAgeInput = document.querySelector(
-    "input[name='age-confirm']"
-  ).value;
+  var formConfirmAgeInput = document.querySelector("input[name='age-confirm']");
   var formDescInput = document.querySelector(
     "textarea[name='tat-description']"
   ).value;
-
+  console.log(formConfirmAgeInput.checked);
   // check if inputs are empty
   if (
     formNameInput === "" ||
@@ -67,14 +71,15 @@ var saveForm = function () {
   );
   console.log(userdata);
   localStorage.setItem("userdata", JSON.stringify(userdata));
+  window.location.href = "/confirmation.html";
   //   JSON.parse(localStorage.getItem("userdata"));
 };
 
 calBtn = document.getElementById("calBtn");
-calendarEl = document.getElementById("calendar-section");
-console.log(calendarEl);
+calendarEl = document.querySelector("#calender-section");
 
 calBtn.addEventListener("click", function () {
   event.preventDefault();
+  console.log("testing", calendarEl);
   calendarEl.classList.add("is-active");
 });
