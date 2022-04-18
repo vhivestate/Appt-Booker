@@ -1,10 +1,9 @@
 var userdata = [];
 
 var formEl = document.querySelector("#client-form");
-var igEl = document.querySelector("ig-section");
 
 // Artist generator API
-var apiUrl = "https://random-data-api.com/api/users/random_user?size=5";
+var apiUrl = "https://random-data-api.com/api/users/random_user?size=3";
 
 // make a get request to url
 fetch(apiUrl).then(function (response) {
@@ -44,14 +43,15 @@ var formHandler = function () {
   var formDescInput = document.querySelector(
     "textarea[name='tat-description']"
   ).value;
-  console.log(formConfirmAgeInput.checked);
+  var formArtistSelect = document.querySelector("input[name='answer']");
   // check if inputs are empty
   if (
     formNameInput === "" ||
     formEmailInput === "" ||
     formPhoneInput === "" ||
     formConfirmAgeInput.checked === false ||
-    formDescInput === ""
+    formDescInput === "" ||
+    formArtistSelect.checked === false
   ) {
     alert("You need to fill out the Client Form!");
     return false;
@@ -69,6 +69,7 @@ var saveForm = function () {
   userdata.push(
     document.querySelector("textarea[name='tat-description']").value
   );
+  //   var formArtistSelect = document.querySelector("input[name='answer']");
   console.log(userdata);
   localStorage.setItem("userdata", JSON.stringify(userdata));
   window.location.href = "/confirmation.html";
@@ -80,6 +81,58 @@ calendarEl = document.querySelector("#calender-section");
 
 calBtn.addEventListener("click", function () {
   event.preventDefault();
-  console.log("testing", calendarEl);
   calendarEl.classList.add("is-active");
+});
+
+//Modal prefernces using Bulma
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Functions to open and close a modal
+  function openModal($el) {
+    $el.classList.add("is-active");
+  }
+
+  function closeModal($el) {
+    $el.classList.remove("is-active");
+  }
+
+  function closeAllModals() {
+    (document.querySelectorAll(".modal") || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll(".js-modal-trigger") || []).forEach(($trigger) => {
+    const modal = $trigger.dataset.target;
+    const $target = document.getElementById(modal);
+    console.log($target);
+
+    $trigger.addEventListener("click", () => {
+      openModal($target);
+    });
+  });
+
+  // Add a click event on various child elements to close the parent modal
+  (
+    document.querySelectorAll(
+      ".modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button"
+    ) || []
+  ).forEach(($close) => {
+    const $target = $close.closest(".modal");
+
+    $close.addEventListener("click", () => {
+      closeModal($target);
+    });
+  });
+
+  // Add a keyboard event to close all modals
+  document.addEventListener("keydown", (event) => {
+    const e = event || window.event;
+
+    if (e.keyCode === 27) {
+      // Escape key
+      closeAllModals();
+    }
+  });
 });
