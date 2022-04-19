@@ -3,36 +3,63 @@ var userdata = [];
 var formEl = document.querySelector("#client-form");
 
 // Artist generator API
-var apiUrl = "https://random-data-api.com/api/users/random_user?size=3";
+var apiUrl1 = "https://randomuser.me/api/?results=3";
 
 // make a get request to url
-fetch(apiUrl).then(function (response) {
+fetch(apiUrl1).then(function (response) {
   // request was successful
   if (response.ok) {
     response.json().then(function (data) {
+      console.log(data);
       document.getElementById("artist-name").innerHTML =
-        data[0].first_name + " " + data[0].last_name;
-      document.getElementById("artist-email").innerHTML = data[0].email;
+        data.results[0].name.first + " " + data.results[0].name.last;
+      document.getElementById("artist-email").innerHTML = data.results[0].email;
       document.getElementById("artist-picture").innerHTML =
-        "<img src=" + data[0].avatar + "/>";
+        '<img src="' + data.results[0].picture.large + '">';
 
       document.getElementById("artist2-name").innerHTML =
-        data[1].first_name + " " + data[1].last_name;
-      document.getElementById("artist2-email").innerHTML = data[1].email;
+        data.results[1].name.first + " " + data.results[1].name.last;
+      document.getElementById("artist2-email").innerHTML =
+        data.results[1].email;
       document.getElementById("artist2-picture").innerHTML =
-        "<img src=" + data[1].avatar + "/>";
+        '<img src="' + data.results[1].picture.large + '">';
 
       document.getElementById("artist3-name").innerHTML =
-        data[1].first_name + " " + data[2].last_name;
-      document.getElementById("artist3-email").innerHTML = data[2].email;
+        data.results[2].name.first + " " + data.results[2].name.last;
+      document.getElementById("artist3-email").innerHTML =
+        data.results[2].email;
       document.getElementById("artist3-picture").innerHTML =
-        "<img src=" + data[2].avatar + "/>";
+        '<img src="' + data.results[2].picture.large + '">';
     });
   } else {
     // if not successful, redirect to homepage
     document.location.replace("./index.html");
   }
 });
+
+//Artist artwork API
+
+var arpiUrl2 =
+  "https://api.unsplash.com/search/photos?query=tattoos&client_id=Chnlt6LfE5Dpl4Ue1FZQfW_mzKt1G-BhBPbIAvx1A1E";
+
+const getImageButton = document.querySelector(".getImageButton");
+const imageToDisplay = document.querySelector(".imageToDisplay");
+
+getImageButton.addEventListener("click", async () => {
+  let randomImage = await getNewImage();
+  imageToDisplay.src = randomImage;
+  console.log("adasdf");
+});
+
+async function getNewImage() {
+  let randomNumber = Math.floor(Math.random() * 10);
+  return fetch(arpiUrl2)
+    .then((response) => response.json())
+    .then((data) => {
+      let allImages = data.results[randomNumber];
+      return allImages.urls.small;
+    });
+}
 
 var formHandler = function () {
   event.preventDefault();
@@ -72,7 +99,7 @@ var saveForm = function () {
   //   var formArtistSelect = document.querySelector("input[name='answer']");
   console.log(userdata);
   localStorage.setItem("userdata", JSON.stringify(userdata));
-  window.location.href = "/confirmation.html";
+  window.location.href = "./confirmation.html";
   //   JSON.parse(localStorage.getItem("userdata"));
 };
 
