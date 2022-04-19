@@ -43,15 +43,15 @@ var formHandler = function () {
   var formDescInput = document.querySelector(
     "textarea[name='tat-description']"
   ).value;
-  var formArtistSelect = document.querySelector("input[name='answer']");
+  //   var formArtistSelect = document.querySelector("input[name='answer']");
   // check if inputs are empty
   if (
     formNameInput === "" ||
     formEmailInput === "" ||
     formPhoneInput === "" ||
     formConfirmAgeInput.checked === false ||
-    formDescInput === "" ||
-    formArtistSelect.checked === false
+    formDescInput === ""
+    // formArtistSelect.checked === false
   ) {
     alert("You need to fill out the Client Form!");
     return false;
