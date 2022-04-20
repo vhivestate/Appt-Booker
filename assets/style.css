@@ -5,20 +5,48 @@
   }
   
   body {
-    background-color: #0C0032;
+    background-color: #344e41;
   }
 /*header start*/
+
+
 header {
-  font-size:70px;
-  padding: 30px;
-  border-bottom: 1px solid #F64C72;
+  padding: 20px 35px;
+  background-color: #588157;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-h1 {
-  color: white;
-  text-shadow: 5px 5px 10px #F64C72;
-  text-align: center;
-  font-family: impact, fantasy;
-  letter-spacing: 10px;
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #dad7cd;
+  display: inline;
+  padding-left: 40%;
+}
+
+header a {
+  text-decoration: none;
+  color: #dad7cd;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
 }
 /*header end*/
 
@@ -42,7 +70,7 @@ h1 {
   }
 img {
   outline-style: solid;
-  outline-color: #F64C72;
+  outline-color: #a3b18a;
 }
 
 /* artists end*/
@@ -73,7 +101,7 @@ ul{
   text-align: center;
   color: white;
   outline-style: solid;
-  outline-color:#F64C72;
+  outline-color:#a3b18a;
   padding: 40px;
 }
 .form h2 {
@@ -81,10 +109,17 @@ ul{
   letter-spacing: 2px;
   font-family: impact, fantasy;
 }
+
 .user-input {
   width: 250px;
   display: flex;
   flex-direction: column;
+  margin-right: 3%;
+  padding: 0 55px;
+}
+
+.tat-des {
+  padding: 0 55px;
 }
 
 textarea {
@@ -98,4 +133,11 @@ textarea {
 /*footer style*/
 footer {
   color: white
+}
+
+
+#flex {
+  display: flex;
+  margin-left: 20%;
+  margin-top: 3%;
 }
