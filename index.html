@@ -15,7 +15,13 @@
   <body>
     <div id="main-header">
       <header>
-        <h1>@HAMDOESNTMATTER</h1>
+        <h1>BOOK AN APPOINTMENT</h1>
+      </header>
+
+      <div class="choose"> 
+        <h3>CHOOSE AN ARTIST:</h3>
+       </div>
+      <section class="artists">
         <div id="artist1">
           <div id="artist-name"></div>
           <div id="artist-picture"></div>
@@ -49,10 +55,14 @@
             </label>
           </div>
         </div>
-      </header>
     </div>
+  </section>
 
     <div>
+
+      <main class="policy">
+        <h3>PRICING / POLICY:</h3>
+
       <button class="getImageButton">View Tattoo Catalogue</button>
       <div class="imageDisplayWrapper" style="margin-top: 25px">
         <img src="" class="imageToDisplay" />
@@ -63,6 +73,7 @@
       <main>
         <h2>Book An Appointment</h2>
         <h3>Pricing / Policy:</h3>
+
         <ul>
           <li>$100 non-refundable deposit required</li>
           <li>$150/hr $100 minimum</li>
@@ -70,32 +81,27 @@
           <li>Provide a form of identification</li>
           <li>Must be 18+ (no exceptions)</li>
         </ul>
-        <h4>call or email for any questions:</h4>
-        <p>
-          Phone: 720.610.6816
-          <br />
-          Email:
-          <a href="mailto://hamdoesntmatter@gmail.com"
-            >hamdoesntmatter@gmail.com</a
-          >
-        </p>
       </main>
     </div>
 
-    <form id="client-form">
-      <h2>Client From</h2>
+    <form id="client-form" class="form">
+      <h2>CLIENT FORM</h2>
+      <div class="user-input">
+        <p>Name:</p>
       <input
         type="text"
         placeholder="Your Name"
         name="name"
         class="form-input"
       />
+      Email:
       <input
         type="email"
         placeholder="Email Address"
         name="email"
         class="form-input"
       />
+      Phone Number:
       <input
         type="tel"
         placeholder="Phone Number"
@@ -111,6 +117,9 @@
           value="true"
         />
       </p>
+    </div>
+
+      <div class="tat-des">
       <h3>Tattoo Description</h3>
       <textarea
         name="tat-description"
@@ -120,15 +129,15 @@
         placeholder="Provide brief description of tattoo, location, and size..."
       ></textarea>
 
-      <button id="calBtn">Pick A Date</button>
-      <button type="submit" class="form-submit">Book Now!</button>
+      <div id="calender-section" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content"><input type="date" /></div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+     </div>
+     <button id="calBtn">Pick A Date</button>
+     <button type="submit" class="form-submit">Book Now!</button>
     </form>
-
-    <div id="calender-section" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content"><input type="date" /></div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
 
     <footer>
       <p>The Delores Tattoo 470 24th Street, Suite 200, Ogden, Utah</p>
