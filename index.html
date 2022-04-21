@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,13 +11,35 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <title>Booking</title>
-  </head>
+</head>
 
-  <body>
-    <div id="main-header">
-      <header>
-        <h1>BOOK AN APPOINTMENT</h1>
-      </header>
+<body>
+
+  <header>
+      <h1>
+        <a href="/">Appointment Booker</a>
+      </h1>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#choose-artist"> Choose Artist</a>
+      </li>
+      <li>
+        <a href="#view-catalogue"> View Catalogue</a>
+      </li>
+      <li>
+        <a href="#book-appt">Book with us!</a>
+      </li>
+    </ul>
+  </nav>
+
+    </header>
+
+    <button class="getImageButton">View Tattoo Catalogue</button>
+    <div class="imageDisplayWrapper" style="margin-top: 25px">
+      <img src="" class="imageToDisplay" />
+    </div>
 
       <button class="getImageButton">View Tattoo Catalogue</button>
       <div class="imageDisplayWrapper" style="margin-top: 25px">
@@ -60,8 +83,7 @@
             </label>
           </div>
         </div>
-    </div>
-  </section>
+
 
     <div>
       <main class="policy">
@@ -78,6 +100,9 @@
 
     <form id="client-form" class="form">
       <h2>CLIENT FORM</h2>
+
+    <section id="flex">
+
       <div class="user-input">
         <p>Name:</p>
       <input
@@ -111,7 +136,7 @@
       </p>
     </div>
 
-      <div class="tat-des">
+    <div class="tat-des">
       <h3>Tattoo Description</h3>
       <textarea
         name="tat-description"
@@ -126,9 +151,13 @@
         <div class="modal-content"><input type="date" /></div>
         <button class="modal-close is-large" aria-label="close"></button>
       </div>
-     </div>
+    </div>
+
      <button id="calBtn">Pick A Date</button>
      <button type="submit" class="form-submit">Book Now!</button>
+
+    </section>
+    
     </form>
 
     <footer>
