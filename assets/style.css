@@ -2,52 +2,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
-  background-color: #344e41;
+  background-color: #FFFDF7
 }
 /*header start*/
-
-
 header {
-padding: 20px 35px;
-background-color: #588157;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+font-size:60px;
+  padding: 10px;
+  margin: 0px ;
+border-bottom: 7px solid #A49C8E;
+  
 }
-
-header h1 {
-font-weight: bold;
-font-size: 36px;
-color: #dad7cd;
-display: inline;
-padding-left: 40%;
-}
-
-header a {
-text-decoration: none;
-color: #dad7cd;
-}
-
-header nav {
-margin: 7px 0;
+h1 {
+color: #2F2225;
+text-align: center;
+font-family: impact, fantasy;
+letter-spacing: 10px;
 }
 
 header nav ul {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-list-style: none;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0px 50px 0px;
 
-header nav ul li a {
-margin: 0 30px;
-font-weight: lighter;
-font-size: 1.55vw;
+  }
+  header nav ul li a {
+  font-size: 15px;
+  outline: 1px solid #4F4940;
+  padding: 5px 10px;
+    border-radius: 10px;
+  
+  }
+
+button:hover {
+    background-color: #FFBC1F
 }
+a:hover {
+    background-color: #FFBC1F;
+}
+button {
+    padding: 9px 10px;
+    border-radius: 10px;
+}
+  
 /*header end*/
 
 /* artists section */
@@ -55,24 +58,28 @@ font-size: 1.55vw;
 font-family: impact, fantasy;
 font-size: 40px;
 text-align: center;
-color: white;
+color: #2F2225;
 padding: 20px;
 letter-spacing: 2px;
 }
 .artists {
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
+  width: 90%;
+  padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
- color: white;
+ color: #2F2225;
+  border: 7px solid #A49C8E;
+  margin: 0px 50px 50px
 }
 img {
 outline-style: solid;
-outline-color: #a3b18a;
+outline-color: #A49C8E;
+   outline-width: 4px;
 }
-
+.catalog {
+  margin: 20px 100px 0px
+}
 /* artists end*/
 
 /* policy start */
@@ -81,17 +88,20 @@ padding: 0px;
 font-size: 40px;
 font-family: impact, fantasy;
   letter-spacing: 2px;
+  color: #2F2225;
 }
 .policy {
-color: white;
+color: #A49C8E;
 padding: 50px;
-border-top: 1px solid white;
+
 text-align: center;
 font-family: Andale Mono, monospace;
 }
-
-ul{
-outline-style: solid
+main ul{
+outline-style: solid ;
+  outline-color: #A49C8E;
+   outline-width: 7px;
+  color; color: #2F2225;
 }
 /*policy end*/
 
@@ -99,45 +109,52 @@ outline-style: solid
 .form {
 font-family: Andale Mono, monospace;
 text-align: center;
-color: white;
+  margin: 45px;
+color: #2F2225;
 outline-style: solid;
-outline-color:#a3b18a;
+outline-color:#A49C8E;
+outline-width: 7px;
 padding: 40px;
+display:flex;
+justify-content: center;
+
+  
 }
-.form h2 {
+.form-header {
 font-size: 40px;
 letter-spacing: 2px;
 font-family: impact, fantasy;
-}
+  text-align: center;
+  text-decoration: underline
+  
 
+}
 .user-input {
-width: 250px;
-display: flex;
-flex-direction: column;
-margin-right: 3%;
-padding: 0 55px;
+width: 520px;
+padding: 20px;
 }
-
-.tat-des {
-padding: 0 55px;
+form div input {
+  display: ;
 }
-
 textarea {
-width: 50%;
+width: 100%;
 height: 150px;
-border: 2px solid #ccc;
-border-radius: 4px;
+border: 3px solid #2F2225;;
 background-color: #f8f8f8;
 resize: none;
 }
+/*form style ends*/
+
 /*footer style*/
 footer {
-color: white
+color: #2F2225;
+  text-align:center;
+  padding: 10px;
+  border-top: 7px solid #A49C8E
+  
 }
-
-
 #flex {
-display: flex;
-margin-left: 20%;
-margin-top: 3%;
-}
+  display: flex;
+  margin-left: 20%;
+  margin-top: 3%;
+  }

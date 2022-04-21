@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,37 +10,31 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <title>Booking</title>
-</head>
- 
-<body>
- 
-  <header>
-      <h1>
-        <a href="/">Appointment Booker</a>
-      </h1>
- 
-  <nav>
-    <ul>
-      <li>
-        <a href="#choose-artist"> Choose Artist</a>
-      </li>
-      <li>
-        <a href="#view-catalogue"> View Catalogue</a>
-      </li>
-      <li>
-        <a href="#book-appt">Book with us!</a>
-      </li>
-    </ul>
-  </nav>
- 
-    </header>
- 
-    <button class="getImageButton">View Tattoo Catalogue</button>
-    <div class="imageDisplayWrapper" style="margin-top: 25px">
-      <img src="" class="imageToDisplay" />
-    </div>
- 
-      <div class="choose">
+  </head>
+
+  <body>
+
+      <header>
+        <h1>THE DELORES TATTOO</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#choose-artist"> Choose Artist</a>
+            </li>
+            <li>
+              <a href="#catalog"> View Catalog</a>
+            </li>
+            <li>
+              <a href="#client-form">Book with us!</a>
+            </li>
+            <li>
+              <a href="#policy">Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div class="choose" id="choose-artist"> 
         <h3>CHOOSE AN ARTIST:</h3>
        </div>
       <section class="artists">
@@ -78,19 +71,18 @@
             </label>
           </div>
         </div>
- 
   </section>
- 
-      <main class="policy">
-        <h3>PRICING / POLICY:</h3>
- 
-    </div>
- 
+
+  <section class="catalog" id="catalog">
+  <button class="getImageButton">View Tattoo Catalog</button>
+  <div class="imageDisplayWrapper" style="margin-top: 25px">
+    <img src="" class="imageToDisplay" />
+  </div>
+</section>
+  
     <div>
-      <main>
-        <h3>Pricing / Policy:</h3>
- 
- 
+      <main class="policy" id="policy">
+        <h3>PRICING / POLICY:</h3>
         <ul>
           <li>$100 non-refundable deposit required</li>
           <li>$150/hr $100 minimum</li>
@@ -100,12 +92,9 @@
         </ul>
       </main>
     </div>
- 
+
+    <div class="form-header"><p>CLIENT FORM</p></div>
     <form id="client-form" class="form">
-      <h2>CLIENT FORM</h2>
- 
-    <section id="flex">
- 
       <div class="user-input">
         <p>Name:</p>
       <input
@@ -114,14 +103,16 @@
         name="name"
         class="form-input"
       />
-      Email:
+      <br>
+      <p>Email:</p>
       <input
         type="email"
         placeholder="Email Address"
         name="email"
         class="form-input"
       />
-      Phone Number:
+      <br>
+      <p>Phone Number:</p>
       <input
         type="tel"
         placeholder="Phone Number"
@@ -137,9 +128,7 @@
           value="true"
         />
       </p>
-    </div>
- 
-    <div class="tat-des">
+      <div class="tat-des">
       <h3>Tattoo Description</h3>
       <textarea
         name="tat-description"
@@ -148,21 +137,20 @@
         rows="10"
         placeholder="Provide brief description of tattoo, location, and size..."
       ></textarea>
- 
       <div id="calender-section" class="modal">
         <div class="modal-background"></div>
         <div class="modal-content"><input type="date" /></div>
         <button class="modal-close is-large" aria-label="close"></button>
       </div>
-    </div>
- 
+     </div>
+    
      <button id="calBtn">Pick A Date</button>
      <button type="submit" class="form-submit">Book Now!</button>
- 
-    </section>
-   
+    </div>
     </form>
- 
+    
+
+
     <footer>
       <p>The Delores Tattoo 470 24th Street, Suite 200, Ogden, Utah</p>
     </footer>
