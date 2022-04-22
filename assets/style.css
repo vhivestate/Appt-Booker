@@ -93,7 +93,7 @@ font-family: impact, fantasy;
 .policy {
 color: #A49C8E;
 padding: 50px;
-
+font-size: 20px;
 text-align: center;
 font-family: Andale Mono, monospace;
 }
@@ -109,6 +109,7 @@ outline-style: solid ;
 .form {
 font-family: Andale Mono, monospace;
 text-align: center;
+  font-size:25px;
   margin: 45px;
 color: #2F2225;
 outline-style: solid;
