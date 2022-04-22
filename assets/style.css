@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #2F2225;
+  --secondary-color: #A49C8E;
+  --background-color: #FFFDF7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +19,11 @@ header {
 font-size:60px;
   padding: 10px;
   margin: 0px ;
-border-bottom: 7px solid #A49C8E;
+border-bottom: 7px solid var(--secondary-color);;
   
 }
 h1 {
-color: #2F2225;
+color: var(--primary-color);
 text-align: center;
 font-family: impact, fantasy;
 letter-spacing: 10px;
@@ -34,10 +40,9 @@ header nav ul {
   }
   header nav ul li a {
   font-size: 15px;
-  outline: 1px solid #4F4940;
+  outline: 1px solid  var(--primary-color);
   padding: 5px 10px;
     border-radius: 10px;
-  
   }
 
 button:hover {
@@ -58,7 +63,7 @@ button {
 font-family: impact, fantasy;
 font-size: 40px;
 text-align: center;
-color: #2F2225;
+color:  var(--primary-color);
 padding: 20px;
 letter-spacing: 2px;
 }
@@ -68,13 +73,13 @@ letter-spacing: 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
- color: #2F2225;
-  border: 7px solid #A49C8E;
+ color:  var(--primary-color);
+  border: 7px solid var(--secondary-color);;
   margin: 0px 50px 50px
 }
 img {
 outline-style: solid;
-outline-color: #A49C8E;
+outline-color: var(--secondary-color);;
    outline-width: 4px;
 }
 .catalog {
@@ -88,10 +93,10 @@ padding: 0px;
 font-size: 40px;
 font-family: impact, fantasy;
   letter-spacing: 2px;
-  color: #2F2225;
+  color:  var(--primary-color);
 }
 .policy {
-color: #A49C8E;
+color: var(--secondary-color);;
 padding: 50px;
 font-size: 20px;
 text-align: center;
@@ -99,9 +104,9 @@ font-family: Andale Mono, monospace;
 }
 main ul{
 outline-style: solid ;
-  outline-color: #A49C8E;
+  outline-color: var(--secondary-color);;
    outline-width: 7px;
-  color; color: #2F2225;
+  color; color:  var(--primary-color);
 }
 /*policy end*/
 
@@ -111,9 +116,9 @@ font-family: Andale Mono, monospace;
 text-align: center;
   font-size:25px;
   margin: 45px;
-color: #2F2225;
+color:  var(--primary-color);
 outline-style: solid;
-outline-color:#A49C8E;
+outline-color:var(--secondary-color);;
 outline-width: 7px;
 padding: 40px;
 display:flex;
@@ -140,18 +145,18 @@ form div input {
 textarea {
 width: 100%;
 height: 150px;
-border: 3px solid #2F2225;;
-background-color: #f8f8f8;
+border: 3px solid  var(--primary-color);;
+background-color: white;
 resize: none;
 }
 /*form style ends*/
 
 /*footer style*/
 footer {
-color: #2F2225;
+color:  var(--primary-color);
   text-align:center;
   padding: 10px;
-  border-top: 7px solid #A49C8E
+  border-top: 7px solid var(--secondary-color);
   
 }
 #flex {
