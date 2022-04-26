@@ -48,7 +48,6 @@ const imageToDisplay = document.querySelector(".imageToDisplay");
 getImageButton.addEventListener("click", async () => {
   let randomImage = await getNewImage();
   imageToDisplay.src = randomImage;
-  console.log("adasdf");
 });
 
 async function getNewImage() {
@@ -70,15 +69,15 @@ var formHandler = function () {
   var formDescInput = document.querySelector(
     "textarea[name='tat-description']"
   ).value;
-  //   var formArtistSelect = document.querySelector("input[name='answer']");
+  var formArtistSelect = document.querySelector("input[name='answer']");
   // check if inputs are empty
   if (
     formNameInput === "" ||
     formEmailInput === "" ||
     formPhoneInput === "" ||
     formConfirmAgeInput.checked === false ||
-    formDescInput === ""
-    // formArtistSelect.checked === false
+    formDescInput === "" ||
+    formArtistSelect.checked === false
   ) {
     alert("You need to fill out the Client Form!");
     return false;
@@ -100,7 +99,6 @@ var saveForm = function () {
   console.log(userdata);
   localStorage.setItem("userdata", JSON.stringify(userdata));
   window.location.href = "./confirmation.html";
-  //   JSON.parse(localStorage.getItem("userdata"));
 };
 
 calBtn = document.getElementById("calBtn");
