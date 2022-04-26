@@ -4,38 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-}
-
-footer {
-    color: white;
-    background-image: url("./images/herobw.webp");
-    background-color: white;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: #ffbc1f;
-}
-
-#flex {
-    display: flex;
-    margin-left: 20%;
-    margin-top: 3%;
-}
-
 header {
-    padding: 20px 35px;
-    background-image: url("./images/herobw.webp");
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: white;
-    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 7px solid var(--primary-color);
+    background-image: url("./images/brickwall.jpeg");
 }
 
 h1 {
@@ -54,6 +28,26 @@ h2 {
     text-align: center;
 }
 
+body {
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #ffbc1f;
+}
+
 button {
     background-color: #373a3f;
     color: white;
@@ -70,13 +64,16 @@ button:hover {
 }
 
 h3:hover {
-    color: #ffbc1f;
+    color: #373a3f;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
+footer {
+    color: white;
+    text-shadow: 1px 1px 3px #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    border-top: 7px solid var(--primary-color);
+    background-image: url("./images/herobw.webp");
     justify-content: center;
-    align-items: center;
-    padding: 9px 10px;
 }
