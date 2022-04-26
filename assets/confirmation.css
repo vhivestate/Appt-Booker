@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/herobw.webp");
+}
+
+footer {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #ffbc1f;
+}
+
+#flex {
+    display: flex;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+header {
+    padding: 20px 35px;
+    background-image: url("./images/herobw.webp");
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+h1,
+h2 {
+    color: white;
+    font-family: Andale Mono, monospace;
+}
+
+button {
+    background-color: #ffbc1f;
+}
+
+button:hover {
+    background-color: #373a3f;
+    color: white;
+}
