@@ -5,11 +5,13 @@
 }
 
 body {
-    background-image: url("./images/herobw.webp");
+    background-color: black;
 }
 
 footer {
     color: white;
+    background-image: url("./images/herobw.webp");
+    background-color: white;
 }
 
 a {
@@ -30,22 +32,51 @@ header {
     padding: 20px 35px;
     background-image: url("./images/herobw.webp");
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: white;
+    align-items: center;
 }
 
-h1,
+h1 {
+    color: white;
+    text-align: center;
+    font-family: impact, fantasy;
+    letter-spacing: 10px;
+    text-shadow: 10px 10px #000000;
+    font-size: 90px;
+    align-items: center;
+}
+
 h2 {
     color: white;
     font-family: Andale Mono, monospace;
+    text-align: center;
 }
 
 button {
-    background-color: #ffbc1f;
+    background-color: #373a3f;
+    color: white;
+    cursor: pointer;
+    padding: 9px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 button:hover {
-    background-color: #373a3f;
-    color: white;
+    background-color: #ffbc1f;
+    color: black;
+}
+
+h3:hover {
+    color: #ffbc1f;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
 }
