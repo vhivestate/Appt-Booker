@@ -43,6 +43,7 @@ header nav ul {
   }
   header nav ul li a {
   font-size: 15px;
+  font-family: 'Oswald';
   background-color:  var(--secondary-color);
   outline: 1px solid  var(--primary-color);
   padding: 15px 15px;
@@ -74,16 +75,17 @@ letter-spacing: 2px;
 }
 .artists {
   width: 90%;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
- color:  white;
- text-shadow: 1px 1px 3px #000000;
+ color:  #191111;
+ text-shadow: 1px 1px 3px #ffffff;
   border: 7px solid var(--secondary-color);;
   margin: 0px 50px 50px;
 background-image: url("./images/brickwall.jpeg");
+  font-family: 'Oswald';
 }
 img {
 outline-style: solid;
@@ -119,29 +121,29 @@ font-family: impact, fantasy;
 .policy {
 color: var(--secondary-color);
 padding: 50px;
-font-size: 20px;
+font-size: 35px;
 text-align: center;
-font-family: Andale Mono, monospace;
+font-family: 'Oswald';
 }
 main ul{
   font-size: 30px;
 outline-style: solid ;
   outline-color: var(--secondary-color);;
    outline-width: 7px;
-  color:  white;
-   text-shadow: 1px 1px 3px #000000;
+  color:  black;
+   text-shadow: 1px 1px 3px #ffffff;
 background-image: url("./images/brickwall.jpeg");
 }
 /*policy end*/
 
 /*client form*/
 .form {
-font-family: Andale Mono, monospace;
+font-family: 'Oswald';
 text-align: center;
-  font-size:25px;
+  font-size:35px;
   margin: 45px;
-color: white;
-   text-shadow: 1px 1px 3px #000000;
+color: black;
+   text-shadow: 5px 5px 5px #fff8f8;
 outline-style: solid;
 outline-color:var(--secondary-color);;
 outline-width: 7px;
@@ -174,6 +176,10 @@ border: 3px solid  var(--primary-color);;
 background-color: white;
 resize: none;
 }
+.form input {
+  width: 420px;
+  height: 30px  
+  }
 /*form style ends*/
 
 /*footer style*/
@@ -182,6 +188,7 @@ color:  white;
    text-shadow: 1px 1px 3px #000000;
   text-align:center;
   font-size: 25px;
+  font-family: 'Oswald';
   padding: 10px;
   border-top: 7px solid var(--primary-color);
 background-image: url("./images/herobw.webp");
@@ -192,3 +199,4 @@ background-image: url("./images/herobw.webp");
   margin-left: 20%;
   margin-top: 3%;
   }
+
