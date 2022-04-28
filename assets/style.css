@@ -176,6 +176,10 @@ border: 3px solid  var(--primary-color);;
 background-color: white;
 resize: none;
 }
+.form input {
+  width: 420px;
+  height: 30px  
+  }
 /*form style ends*/
 
 /*footer style*/
@@ -184,6 +188,7 @@ color:  white;
    text-shadow: 1px 1px 3px #000000;
   text-align:center;
   font-size: 25px;
+  font-family: 'Oswald';
   padding: 10px;
   border-top: 7px solid var(--primary-color);
 background-image: url("./images/herobw.webp");
