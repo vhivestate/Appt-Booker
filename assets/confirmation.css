@@ -61,10 +61,12 @@ button {
     background-color: #373a3f;
     color: white;
     cursor: pointer;
-    padding: 9px 10px;
+    padding: 10px 40px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    font-family: 'Oswald';
+    font-size: 20px;
 }
 
 button:hover {
