@@ -88,7 +88,7 @@ letter-spacing: 2px;
   color:  white;
   text-shadow: 1px 1px 3px #000000;
   border: 7px solid var(--secondary-color);;
-  margin-left: 40px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
   background-image: url("./images/brickwall.jpeg");
