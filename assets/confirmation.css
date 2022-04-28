@@ -1,88 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    font-size: 30px;
-    padding: 10px;
-    margin: 0px;
-    border-bottom: 7px solid var(--primary-color);
-    background-image: url("./images/brickwall.jpeg");
-    justify-content: center;
-    align-items: center;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: 7px solid var(--primary-color);
+  background-image: url("./images/brickwall.jpeg");
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    font-family: impact, fantasy;
-    letter-spacing: 10px;
-    text-shadow: 10px 10px #000000;
-    font-size: 90px;
-    align-items: center;
+  color: white;
+  text-align: center;
+  font-family: impact, fantasy;
+  letter-spacing: 10px;
+  text-shadow: 10px 10px #000000;
+  font-size: 90px;
+  align-items: center;
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-h2 {
-    color: white;
-    font-family: Andale Mono, monospace;
-    text-align: center;
+h2,
+p {
+  color: white;
+  font-family: Andale Mono, monospace;
+  text-align: center;
+}
+
+h2 #confirmation_num {
+  color: red;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 10px;
 }
 
 a {
-    color: white;
-    justify-content: center;
-    align-items: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 a:hover {
-    color: #ffbc1f;
+  color: #ffbc1f;
 }
 
 button {
-    background-color: #373a3f;
-    color: white;
-    cursor: pointer;
-    padding: 9px 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+  background-color: #373a3f;
+  color: white;
+  cursor: pointer;
+  padding: 9px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 button:hover {
-    background-color: #ffbc1f;
-    color: black;
+  background-color: #ffbc1f;
+  color: black;
 }
 
 h3:hover {
-    color: #373a3f;
+  color: #373a3f;
 }
 
 footer {
-    color: white;
-    text-shadow: 1px 1px 3px #000000;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px;
-    border-top: 7px solid var(--primary-color);
-    background-image: url("./images/herobw.webp");
-    justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  border-top: 7px solid var(--primary-color);
+  background-image: url("./images/herobw.webp");
+  justify-content: center;
 }

@@ -9,80 +9,97 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Staatliches&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
     <title>Booking</title>
   </head>
 
   <body>
+    <header>
+      <h1>THE DELORES TATTOO</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#choose-artist"> Choose Artist</a>
+          </li>
+          <li>
+            <a href="#catalog"> View Catalog</a>
+          </li>
+          <li>
+            <a href="#client-form">Book with us!</a>
+          </li>
+          <li>
+            <a href="#policy">Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <header>
-        <h1>THE DELORES TATTOO</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#choose-artist"> Choose Artist</a>
-            </li>
-            <li>
-              <a href="#catalog"> View Catalog</a>
-            </li>
-            <li>
-              <a href="#client-form">Book with us!</a>
-            </li>
-            <li>
-              <a href="#policy">Policy</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      
-      <div class="choose" id="choose-artist"> 
-        <h3>CHOOSE AN ARTIST:</h3>
-       </div>
-      <section class="artists">
-        <div id="artist1">
-          <div id="artist-name"></div>
-          <div id="artist-picture"></div>
-          <div id="artist-email"></div>
-          <div class="control">
-            <label class="radio">
-              <input type="radio" name="answer" />
-              Choose Me
-            </label>
-          </div>
+    <div class="choose">
+      <h3>CHOOSE AN ARTIST:</h3>
+    </div>
+    <section class="artists" id="choose-artist">
+      <div id="artist1">
+        <div id="artist-name"></div>
+        <div id="artist-picture"></div>
+        <div id="artist-email"></div>
+        <div class="control">
+          <label class="radio">
+            <input
+              type="radio"
+              name="contact"
+              id="contactChoice1"
+              value="artist1"
+            />
+            Choose Me
+          </label>
         </div>
-        <div id="artist2">
-          <div id="artist2-name"></div>
-          <div id="artist2-picture"></div>
-          <div id="artist2-email"></div>
-          <div class="control">
-            <label class="radio">
-              <input type="radio" name="answer" />
-              Choose Me
-            </label>
-          </div>
+      </div>
+      <div id="artist2">
+        <div id="artist2-name"></div>
+        <div id="artist2-picture"></div>
+        <div id="artist2-email"></div>
+        <div class="control">
+          <label class="radio">
+            <input
+              type="radio"
+              name="contact"
+              id="contactChoice2"
+              value="artist2"
+            />
+            Choose Me
+          </label>
         </div>
-        <div id="artist3">
-          <div id="artist3-name"></div>
-          <div id="artist3-picture"></div>
-          <div id="artist3-email"></div>
-          <div class="control">
-            <label class="radio">
-              <input type="radio" name="answer" />
-              Choose Me
-            </label>
-          </div>
+      </div>
+      <div id="artist3">
+        <div id="artist3-name"></div>
+        <div id="artist3-picture"></div>
+        <div id="artist3-email"></div>
+        <div class="control">
+          <label class="radio">
+            <input
+              type="radio"
+              name="contact"
+              id="contactChoice3"
+              value="artist3"
+            />
+            Choose Me
+          </label>
         </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="catalog" id="catalog">
-<div class="center-catalog">
-  <button class="getImageButton">View Tattoo Catalog</button>
-  <div class="imageDisplayWrapper" style="margin-top: 25px">
-    <img src="" class="imageToDisplay" />
-  </div>
-</div>
-</section>
-  
+    <section class="catalog" id="catalog">
+      <div class="center-catalog">
+        <button class="getImageButton">View Tattoo Catalog</button>
+        <div class="imageDisplayWrapper" style="margin-top: 25px">
+          <img src="" class="imageToDisplay" />
+        </div>
+      </div>
+    </section>
+
     <div>
       <main class="policy" id="policy">
         <h3>PRICING / POLICY:</h3>
@@ -100,59 +117,59 @@
     <form id="client-form" class="form">
       <div class="user-input">
         <p>Name:</p>
-      <input
-        type="text"
-        placeholder="Your Name"
-        name="name"
-        class="form-input"
-      />
-      <br>
-      <p>Email:</p>
-      <input
-        type="email"
-        placeholder="Email Address"
-        name="email"
-        class="form-input"
-      />
-      <br>
-      <p>Phone Number:</p>
-      <input
-        type="tel"
-        placeholder="Phone Number"
-        name="phone"
-        class="form-input"
-      />
-      <p>
-        I acknowledge that I am at least 18 years of age.
         <input
-          type="checkbox"
-          name="age-confirm"
-          id="age-confirm"
-          value="true"
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          class="form-input"
         />
-      </p>
-      <div class="tat-des">
-      <h3>Tattoo Description</h3>
-      <textarea
-        name="tat-description"
-        id="textarea"
-        cols="30"
-        rows="10"
-        placeholder="Provide brief description of tattoo, location, and size..."
-      ></textarea>
-      <div id="calender-section" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content"><input type="date" /></div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-     </div>
-    
-     <button id="calBtn">Pick A Date</button>
-     <button type="submit" class="form-submit">Book Now!</button>
-    </div>
-    </form>
-    
+        <br />
+        <p>Email:</p>
+        <input
+          type="email"
+          placeholder="Email Address"
+          name="email"
+          class="form-input"
+        />
+        <br />
+        <p>Phone Number:</p>
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          name="phone"
+          class="form-input"
+        />
+        <p>
+          I acknowledge that I am at least 18 years of age.
+          <input
+            type="checkbox"
+            name="age-confirm"
+            id="age-confirm"
+            value="true"
+          />
+        </p>
+        <div class="tat-des">
+          <h3>Tattoo Description</h3>
+          <textarea
+            name="tat-description"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Provide brief description of tattoo, location, and size..."
+          ></textarea>
+          <div id="calender-section" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <input type="date" name="calendar-date" />
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+        </div>
 
+        <button id="calBtn">Pick A Date</button>
+        <button type="submit" class="form-submit">Book Now!</button>
+      </div>
+    </form>
 
     <footer>
       <p>The Delores Tattoo 470 24th Street, Suite 200, Ogden, Utah</p>
