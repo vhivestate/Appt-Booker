@@ -6,6 +6,7 @@
 (function () {
   window.localStorage.getItem("userdata");
   var userdetails = JSON.parse(localStorage.getItem("userdata"));
-  document.getElementById("customer-name").value = userdetails[1];
-  document.getElementById("tattoo-date").value = userdetails[4];
+  console.log(document.getElementById("customer-name"));
+  document.getElementById("customer-name").innerText = userdetails[0];
+  document.getElementById("tattoo-date").innerHTML = userdetails[4];
 })();
