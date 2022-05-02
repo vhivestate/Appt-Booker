@@ -83,7 +83,7 @@ letter-spacing: 2px;
  color:  #191111;
  text-shadow: 1px 1px 3px #ffffff;
   border: 7px solid var(--secondary-color);;
-  margin: 0px 50px 50px;
+  margin: 0 auto;
 background-image: url("./images/brickwall.jpeg");
   font-family: 'Oswald';
 }
