@@ -1,5 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <title>Booking</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>THE DELORES TATTOO</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#choose-artist"> Choose Artist</a>
+        </li>
+        <li>
+          <a href="#catalog"> View Catalog</a>
+        </li>
+        <li>
+          <a href="#client-form">Book with us!</a>
+        </li>
+        <li>
+          <a href="#policy">Policy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="choose" id="choose-artist">
+    <h3>CHOOSE AN ARTIST:</h3>
+  </div>
+
+  <section class="artists">
+    <div id="artist1">
+      <div id="artist-name" class="name-pad"></div>
+      <div id="artist-picture"></div>
+      <div id="artist-email"></div>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Choose Me
+        </label>
+      </div>
+    </div>
+    <div id="artist2">
+      <div id="artist2-name" class="name-pad"></div>
+      <div id="artist2-picture"></div>
+      <div id="artist2-email"></div>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Choose Me
+        </label>
+      </div>
+    </div>
+    <div id="artist3">
+      <div id="artist3-name" class="name-pad"></div>
+      <div id="artist3-picture"></div>
+      <div id="artist3-email"></div>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer" />
+          Choose Me
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="center-catalog">
+      <button class="getImageButton">View Tattoo Catalog</button>
+      <div class="imageDisplayWrapper" style="margin-top: 25px">
+        <img src="" class="imageToDisplay" />
+      </div>
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -111,7 +191,20 @@
           <li>Must be 18+ (no exceptions)</li>
         </ul>
       </main>
+
     </div>
+  </section>
+
+  <div class="policy" id="policy">
+    <h3>PRICING / POLICY:</h3>
+    <ul>
+      <li>$100 non-refundable deposit required</li>
+      <li>$150/hr $100 minimum</li>
+      <li>Waiver must be signed upon arrival of appointment</li>
+      <li>Provide a form of identification</li>
+      <li>Must be 18+ (no exceptions)</li>
+    </ul>
+  </div>
 
     <div class="form-header"><p>CLIENT FORM</p></div>
     <form id="client-form" class="form">
@@ -177,3 +270,4 @@
   </body>
   <script src="./assets/script.js"></script>
 </html>
+

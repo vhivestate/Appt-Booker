@@ -17,4 +17,6 @@ We together as a group created a website that provides a quick and easy method o
 ![screenshot](./assets/images/website-ss.png)
 
 ## Contribution
+
 Made with ❤️ by Valeria Garcia, Sterling Peck, Alex Canez, Kaeleb Sosa
+
