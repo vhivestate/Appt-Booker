@@ -41,7 +41,7 @@ fetch(apiUrl1).then(function (response) {
 //Artist artwork API
 
 var arpiUrl2 =
-  "https://api.unsplash.com/photos/random?query=tattoos&client_id=Chnlt6LfE5Dpl4Ue1FZQfW_mzKt1G-BhBPbIAvx1A1E";
+  "https://api.unsplash.com/photos/random?query=tattoo&client_id=nmeMqa8mjZSX0CY-So38Udv92mDal62AgmpXdItR0U4";
 
 const getImageButton = document.querySelector(".getImageButton");
 const imageToDisplay = document.querySelector(".imageToDisplay");
