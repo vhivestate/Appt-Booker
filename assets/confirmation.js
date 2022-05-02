@@ -3,8 +3,10 @@
   confirmation.textContent = Math.floor(Math.random() * (50000 - 0));
 })();
 
-// (function () {
-//   const confirmationdetails = document.querySelector("#conf_details");
-//   window.localStorage.getItem("userdata");
-//   JSON.parse(localStorage.getItem("userdata"));
-// })();
+(function () {
+  window.localStorage.getItem("userdata");
+  var userdetails = JSON.parse(localStorage.getItem("userdata"));
+  console.log(document.getElementById("customer-name"));
+  document.getElementById("customer-name").innerText = userdetails[0];
+  document.getElementById("tattoo-date").innerHTML = userdetails[4];
+})();

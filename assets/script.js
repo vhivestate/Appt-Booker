@@ -1,4 +1,5 @@
 var userdata = [];
+var selectedArtist;
 
 var formEl = document.querySelector("#client-form");
 
@@ -40,7 +41,7 @@ fetch(apiUrl1).then(function (response) {
 //Artist artwork API
 
 var arpiUrl2 =
-  "https://api.unsplash.com/search/photos?query=tattoos&client_id=Chnlt6LfE5Dpl4Ue1FZQfW_mzKt1G-BhBPbIAvx1A1E";
+  "https://api.unsplash.com/photos/random?query=tattoos&client_id=Chnlt6LfE5Dpl4Ue1FZQfW_mzKt1G-BhBPbIAvx1A1E";
 
 const getImageButton = document.querySelector(".getImageButton");
 const imageToDisplay = document.querySelector(".imageToDisplay");
@@ -51,14 +52,24 @@ getImageButton.addEventListener("click", async () => {
 });
 
 async function getNewImage() {
-  let randomNumber = Math.floor(Math.random() * 10);
+  // let randomNumber = Math.floor(Math.random() * 10);
   return fetch(arpiUrl2)
     .then((response) => response.json())
     .then((data) => {
-      let allImages = data.results[randomNumber];
-      return allImages.urls.small;
+      // let allImages = data.results[randomNumber];
+      return data.urls.small;
     });
 }
+
+// Store value of selected artist
+document
+  .getElementById("choose-artist")
+  .addEventListener("click", function (event) {
+    if (event.target && event.target.matches("input[type='radio']")) {
+      selectedArtist = event.target.value;
+      console.log(selectedArtist);
+    }
+  });
 
 var formHandler = function () {
   event.preventDefault();
@@ -69,15 +80,14 @@ var formHandler = function () {
   var formDescInput = document.querySelector(
     "textarea[name='tat-description']"
   ).value;
-  var formArtistSelect = document.querySelector("input[name='answer']");
+
   // check if inputs are empty
   if (
     formNameInput === "" ||
     formEmailInput === "" ||
     formPhoneInput === "" ||
     formConfirmAgeInput.checked === false ||
-    formDescInput === "" ||
-    formArtistSelect.checked === false
+    formDescInput === ""
   ) {
     alert("You need to fill out the Client Form!");
     return false;
@@ -95,7 +105,8 @@ var saveForm = function () {
   userdata.push(
     document.querySelector("textarea[name='tat-description']").value
   );
-  //   var formArtistSelect = document.querySelector("input[name='answer']");
+  userdata.push(document.querySelector("input[name='calendar-date']").value);
+  userdata.push(selectedArtist);
   console.log(userdata);
   localStorage.setItem("userdata", JSON.stringify(userdata));
   window.location.href = "./confirmation.html";

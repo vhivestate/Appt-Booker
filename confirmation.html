@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  ​
+​
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Your Confirmation</title>
+  <link rel="stylesheet" href="./assets/confirmation.css" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+</head>
+​ ​
+
+<body>
+  <header>
+    <h1>THE DELORES TATTOO</h1>
+    <nav>
+      <a href="index.html">
+        <button>Home</button>
+        ​</a>
+    </nav>
+  </header>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,46 +33,41 @@
     <link rel="stylesheet" href="./assets/confirmation.css" />
   </head>
   ​ ​
-  <body>
-    <header>
-      <a href="index.html">
-        <button>Home</button>
-        ​</a
-      >
-    </header>
-    <h1>Thank you! Your appointment is set.</h1>
-    <h2>Your Confirmation number is:<span id="confirmation_num"></span></h2>
-    <h3 id="conf_details">Confirmation details:</h3>
-    ​
-    <h2>Where we are located</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
-      frameborder="0"
-      style="border: 0"
-      allowfullscreen
-    >
-    </iframe>
 
-    <h2>Here is an informative video about tattoo care!</h2>
-    <iframe
-      width="1003"
-      height="573"
-      src="https://www.youtube.com/embed/yroOhdfqnpo"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+  <body>
+    <section>
+      <h2>Thank you! <span id="customer-name"></span> Your appointment is set.</h2>
+      <h2>Your Confirmation number is: <span id="confirmation_num"></span></h2>
+      <p>Your appoinment is set for: <span id="tattoo-date"></span></p>
+      ​
+      <h2>Where we are located ⇩</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12088.829763957196!2d-111.870599!3d40.757462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9eb4b4c2714c57ca!2s27%20Tattoo%20Studio!5e0!3m2!1sen!2sus!4v1651172626684!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        frameborder="0" style="border: 0" allowfullscreen>
+      </iframe>
+
+      <h2>Here is an informative video about tattoo care!</h2>
+      <iframe width="750" height="450" src="https://www.youtube.com/embed/yroOhdfqnpo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    </section>
+
 
     <footer>
-      <h3>Created By: SP , KS , VG , AC.</h3>
-      <div>
-        <a href="#">Back to Top</a><br />
+      <section>
+        <h3>Created By: SP , KS , VG , AC.</h3>
+
+        <a href="#">
+          <button>Back to Top</button>
+          ​</a>
         &copy; 2022 , Inc.
-      </div>
+      </section>
+
     </footer>
     ​
     <script src="./assets/confirmation.js"></script>
   </body>
   ​
+
 </html>
